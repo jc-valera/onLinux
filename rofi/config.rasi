@@ -2,18 +2,18 @@
  * ROFI 	Color theme
  * Author: 	jc-valera
  *
- * Description:	This is my configuration for rofi. I took the base colors from 
- * 		a defautls themes preinstaled  
+ * Description:	This is my configuration for rofi. I took the base colors from
+ * 		a defautls themes preinstaled
  *
  ******************************************************************************/
 
 configuration {
-	display-drun: "Applications:";
+	display-drun: "🚀 Apps ::";
 	display-window: "Windows:";
 	drun-display-format: "{name}";
-	font: "Sans Regular 10";
+	font: "Cascadia Code 9";
 	modi: "drun";
-	//icon-theme: "Papirus";
+	icon-theme: "Breeze_Dark_RC";
 	show-icons: true;
 }
 
@@ -52,18 +52,22 @@ configuration {
 
 window {
 	background-color: @background;
-	border-radius: 7px;
+	border: 1px;
+	border-color: @bordercolor;
+	border-radius: 14px;
 	width: 30%;
+	padding: 10px;
 }
+
 
 listview {
 	fixed-height: 0;
 	border: 0px dash 0px 0px;
 	border-color: @separatorcolor;
-	spacing: 3px;
+	spacing: 4px;
 	scrollbar: false;
-	padding: 2px 0px 0px;
-	//columns: 3; 
+	padding: 8px 2px 2px 2px;
+	//columns: 3;
 	lines: 7;
 }
 
@@ -91,9 +95,12 @@ element.selected.normal {
 }
 
 inputbar {
-	spacing: 5;
+	spacing: 8px;
 	text-color: @normal-foreground;
-	padding: 10px;
+	padding: 11px 14px;
+	border: 1px;
+	background-color: transparent;
+	border-radius: 10px;
 }
 
 prompt {
